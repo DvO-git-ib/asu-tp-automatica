@@ -1,0 +1,42 @@
+АСУ ТП «Автоматика»
+Демонстрационные учётные записи
+================================
+
+ВАЖНО:
+Эти логины и пароли предназначены только для локального запуска
+учебного демонстрационного проекта. Не используйте эти пароли
+для реальных систем или других сервисов.
+
+1. Непривилегированный пользователь
+   Логин в GUI: unprivileged
+   PostgreSQL login: user_unprivileged
+   Пароль: unpriv123
+
+2. Оператор
+   Логин в GUI: operator
+   PostgreSQL login: user_operator
+   Пароль: pass123
+
+3. Привилегированный пользователь
+   Логин в GUI: privileged
+   PostgreSQL login: user_privileged
+   Пароль: priv123
+
+4. Инженер
+   Логин в GUI: engineer
+   PostgreSQL login: user_engineer
+   Пароль: pass123
+
+5. Администратор ИС
+   Логин в GUI: admin
+   PostgreSQL login: user_admin
+   Пароль: admin123
+
+6. Администратор ИБ
+   Логин в GUI: ib_admin
+   PostgreSQL login: user_ib_admin
+   Пароль: ib123
+
+Примечание:
+В окне входа можно использовать короткий логин без префикса user_.
+Приложение самостоятельно формирует PostgreSQL-логин.
