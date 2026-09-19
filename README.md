@@ -41,14 +41,14 @@
 
 ```mermaid
 flowchart LR
-    U[Пользователь] --> GUI[Python / Tkinter]
-    GUI -->|psycopg2| DB[(PostgreSQL)]
-    DB --> ID[LOGIN role user_*]
-    ID --> RBAC[Групповая роль app_*]
-    RBAC --> FN[Функции и представления]
-    FN --> POL[check_policy()]
-    POL --> DATA[Технологические данные]
-    POL --> AUDIT[Журналы операций и аварий]
+    U["Пользователь"] --> GUI["Python / Tkinter"]
+    GUI -->|psycopg2| DB[("PostgreSQL")]
+    DB --> ID["LOGIN role user_*"]
+    ID --> RBAC["Групповая роль app_*"]
+    RBAC --> FN["Функции и представления"]
+    FN --> POL["check_policy()"]
+    POL --> DATA["Технологические данные"]
+    POL --> AUDIT["Журналы операций и аварий"]
 ```
 
 Клиентский интерфейс определяет доступные рабочие вкладки, но основная серверная проверка прав находится в PostgreSQL. Поэтому пользователь не получает прямой доступ к таблицам только за счет обхода GUI.
